@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <title>Search</title>
+  </head>
+  <body>
+    
+    <!-- Navigation Bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="prd.html"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+            <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+          </svg>
+            </div>
+        </a>
+        <div class="collapse justify-content-center navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ">
+                <a class="nav-item nav-link" href="#about">Про нас</a>
+                <a class="nav-item nav-link" href="#book-your-trip"><strong>Підбір квартири</strong></a>
+                <a class="nav-item nav-link" href="#contact">Зв'яжіться з нами</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Filters Section -->
+    <div class="filters-container container-fluid d-flex flex-column align-items-center justify-content-center px-0 py-5 my-5">
+      <h1 class="filter-title mt-4 mb-4 font-weight-bold px-2">Фільтрування:</h1>
+      <form action="#" class="d-flex flex-row align-items-end mb-5 px-2">
+        
+        <div class="filter-options d-flex flex-column mx-1">
+          <label for="county" class="font-weight-bold text-dark">Район:</label>
+          <select id="county" class="rounded border-light">
+          <option value="#" disabled selected>..</option>
+          <option value="c1">Галицький район</option>
+          <option value="c2">Залізничний район</option>
+          <option value="c3">Франківський район</option>
+          </select>
+        </div>
+        <div class="filter-options d-flex flex-column mx-1">
+          <label for="price" class="font-weight-bold text-dark">Ціна:</label>
+          <select id="price" class="rounded border-light">
+          <option value="#" disabled selected>..</option>
+          <option value="p1">До 20 000 грн</option>
+          <option value="p2">До 30000 грн</option>
+          <option value="p3">До 50000 грн</option>
+          </select>
+        </div>
+        <div class="filter-options d-flex flex-column mx-1">
+          <label for="type" class="font-weight-bold text-dark">Тип:</label>
+          <select id="type" class="rounded border-light">
+          <option value="#" disabled selected>..</option>
+          <option value="t1">Однокімнатна</option>
+          <option value="t2">Двохкімнатна</option>
+          <option value="t3">Трьохкімнатна</option>
+          </select>
+        </div>
+        <div class="filter-options d-flex flex-column mx-1">
+          <label for="parking" class="font-weight-bold text-dark">Паркінг:</label>
+          <select id="parking" class="rounded border-light">
+          <option value="#" disabled selected>..</option>
+          <option value="y">Так</option>
+          <option value="n">Ні</option>
+          </select>
+        </div>
+        <div class="filter-options d-flex flex-column mx-1">
+          <label for="nearby" class="font-weight-bold text-dark">Поблизу:</label>
+          <select id="nearby" class="rounded border-light">
+          <option value="#" disabled selected>..</option>
+          <option value="pk">Парки</option>
+          <option value="sch">Школи</option>
+          <option value="ml">Торгові центри</option>
+          <option value="dt">Пригород</option>
+          </select>
+        </div>
+        <div class="filters-buttons d-flex flex-row mx-1">
+          <button type="submit" class="font-weight-bold text-white px-2 rounded bg-info border-light mx-1 py-1">
+            Пошук
+          </button>
+          <button type="submit" class="font-weight-bold text-white px-2 rounded bg-warning border-light mx-1 py-1">
+            <i class="fas fa-edit"></i>
+            Очистити фільтри
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Results Section -->
+
+    <h3 class="results-title text-black-50 mb-4">Результати пошуку Знайдено 3 квартири.</h3>
+    <div class="results-container container-fluid d-flex my-5 px-5">
+      <ul class="results-list d-flex px-0">
+        <li class="list-inline-item result"><a href="flat1.html"><img src="images/1_1.jpg" alt="#" class="img-result img-fluid img-thumbnail"></a></li>
+        <li class="list-inline-item result"><a href="flat2.html"><img src="images/2_1.jpg" alt="#" class="img-result img-fluid img-thumbnail"></a></li>
+        <li class="list-inline-item result"><a href="flat3.html"><img src="images/3_1.jpg" alt="#" class="img-result img-fluid img-thumbnail"></a></li>
+      </ul>
+    </div>
+
+    <!-- Footer Section -->
+
+    <footer class="container-fluid d-flex flex-column align-items-center justify-content-center bg-dark px-0">
+        <div class="interest-links container-fluid d-flex py-3 align-items-center justify-content-center row">
+          <ul class="links-list d-flex px-2 col-lg-4 py-2">
+            <li class="list-inline-item">
+              <a href="home.html" class="text-decoration-none text-white font-weight-bolder">ГОЛОВНА СТОРІНКА</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="navig.html" class="text-decoration-none text-white font-weight-bolder">ПОШУК</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-decoration-none text-white font-weight-bolder">ПРО НАС</a>
+            </li>
+            
+          </ul>
+          <a href="apartments.html" class="icon-list text-decoration-none text-white d-flex rounded-circle p-4 position-relative">
+            <i class="fas fa-map-marker-alt"></i>
+          </a>
+          <ul class="links-list d-flex px-2 col-lg-3 py-2">
+            <li class="list-inline-item">
+              <a href="#" class="text-decoration-none text-white font-weight-bolder">FACEBOOK</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-decoration-none text-white font-weight-bolder">INSTAGRAM</a>
+            </li>
+            <li class="list-inline-item">
+                <a href="#" class="text-decoration-none text-white font-weight-bolder">Номер телефону</a>
+              </li>
+          </ul>
+        </div>
+        <div class="subscribe-section container-fluid pt-4 row align-items-start justify-content-center">
+          <div class="subscribe col-lg-5 d-flex align-items-center justify-content-start flex-column px-2">
+            <h6 class="title-md">
+              <a href="#" class="title text-white font-weight-bolder">SUBSCRIBE</a>
+            </h6>
+            <form action="#" class="d-flex flex-column justify-content-start pt-3 pb-3 pr-4 pl-3">
+              <div class="d-flex flex-row">
+                <input type="text" id="send" placeholder="you@example.com" size="55" class="border p-2 rounded-left border-dark"/>
+                <button type="submit" class="font-weight-bold text-white px-2 rounded-right bg-dark border-dark">
+                  Send
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="contact col-lg-5 d-flex align-items-center justify-content-start flex-column px-2">
+            <h6 class="title-md">
+              <a href="#" class="title text-white font-weight-bolder">CONTACT</a>
+            </h6>
+            <p class="question text-dark">
+                Наша Компанія була заснована в листопаді 2021 року і на
+                сьогоднішній день є одним з лідерів ринку нерухомості. За цей рік ми набули безцінного досвіду спілкування
+                 з людьми і переконалися, що головне в нашій роботі. <br />
+              <a href="#"></a>
+            </p>
+          </div>
+          <div class="about col-lg-5 d-flex align-items-center justify-content-start flex-column">
+            <h6 class="title-md">
+              <a href="#" class="title text-white font-weight-bolder">ABOUT</a>
+            </h6>
+            <p class="question text-dark">
+                Ріелторська Компанія «Новий вид» є одним з нових лідерів ринку нерухомості і вже на протязі цього року вийшла
+                 в Топ-10 кращих ріелторських компаній нашого міста. 
+              <a href="#">Learn More...</a>
+            </p>
+          </div>
+        </div>
+        <div class="social-media container-fluid pt-2 row align-items-start justify-content-center">
+          <ul class="social-media-list col-lg-3 d-flex justify-content-start">
+            <li class="list-inline-item pr-2">
+              <a href="#" class="text-white-50"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="list-inline-item pr-2">
+              <a href="#" class="text-white-50"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="list-inline-item pr-2">
+              <a href="#" class="text-white-50"><i class="fas fa-blog"></i></a>
+            </li>
+            <li class="list-inline-item pr-2">
+              <a href="#" class="text-white-50"><i class="fab fa-google-plus-g"></i></a>
+            </li>
+            <li class="list-inline-item pr-2">
+              <a href="#" class="text-white-50"><i class="fab fa-youtube"></i></a>
+            </li>
+          </ul>
+          
+        </div>
+      </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/526bcd4356.js" crossorigin="anonymous"></script>
+  </body>
+</html>
